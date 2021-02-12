@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>☆To Do List☆</title>
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <div class="link-list">
+                <form class='js-linkForm'>
+                    <input class='js-link link' type="text" placeholder="links" required>
+                    <input class='js-description description' type="text" placeholder="description" required>
+                    <button type="submit">📝</button>
+                </form>
+                <ul class="js-linkList">
+                </ul>
+            </div>
+            <div class="Dday-list">
+                <form class='js-DdayForm'>
+                    <input class='js-DdayDescription DdayDescription' type="text" placeholder="description" required>
+                    <input class='js-Dday Dday' type="date" required>
+                    <button type="submit">📝</button>
+                </form>
+                <ul class="js-DdayList">
+                </ul>
+            </div>
+        </div>
+        <div class="center">
+            <div class="clockContainer">
+                <h1 class="toDoTitle">To Do List☆</h1>
+                <h1 class="js-clock clockTitle">00:00:00</h1>
+            </div>
+            <div class="weatherContainer">
+                <span class="js-weather">...</span>
+            </div>
+            <br>
+            <div class="greetingContainer">
+                <form class="js-greetingForm">
+                    <input type="text" placeholder="write a name" required>
+                </form>
+                <div class="js-greetingDiv">
+                    <span class="js-greeting"></span><button>&#128394;</button>
+                </div>
+            </div>
+        </div>
+        <div class="right-side">
+            <form class='js-toDoForm'>
+                <input class="toDoInput" type="text" placeholder="to do" required>
+                <button type="submit">📝</button>
+            </form>
+            <ul class="js-toDoList">
+            </ul>
+        </div>
+    </div>
+    <script src="highLight.js"></script>
+    <script src="clock.js"></script>
+    <script src="bg.js"></script>
+    <script src="greeting.js"></script>
+    <script src="weather.js"></script>
+    <script src="Dday.js"></script>
+    <script src="linkList.js"></script>
+    <script src="todo.js"></script>
+</body>
+</html>
