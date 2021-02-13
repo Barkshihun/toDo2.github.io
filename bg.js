@@ -10,7 +10,7 @@ function getTime(){
     const currentTime = new Date().getHours();
     if(6 <= currentTime & currentTime <= 11){
         return 'morning'
-    } else if(12 < currentTime & currentTime <= 18){
+    } else if(12 <= currentTime & currentTime <= 18){
         return 'afternoon'
     } else{
         return 'night'
