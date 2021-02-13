@@ -30,11 +30,11 @@ function DdayLoad(Dday){
     const remainMillseconds = day - currentDate;
     const remainDay = Math.ceil(remainMillseconds / ONE_DAY_MILLISECOND);
     if(remainDay === -0){
-        return 'Dday'
+        return 'D-day'
     } else if (remainDay < 0){
-        return `Dday+${Math.abs(remainDay)}`
+        return `D+${Math.abs(remainDay)}`
     } else{
-        return `Dday-${remainDay}`
+        return `D-${remainDay}`
     }
 }
 
